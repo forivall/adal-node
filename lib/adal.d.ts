@@ -33,13 +33,14 @@ interface LoggingOptions {
 
 export class Logging {
   /**
-   * @property {LoggingLevel} LOGGING_LEVEL Provides information about the logging levels.
-   * ERROR: 0,
-   * WARN: 1,
-   * INFO: 2,
-   * VERBOSE: 3
+   * @property Provides information about the logging levels.
    */
-  static LOGGING_LEVEL: LoggingLevel;
+  static LOGGING_LEVEL: {
+    ERROR    : 0,
+    WARN     : 1,
+    INFO     : 2,
+    VERBOSE  : 3
+  }
   /**
    * Sets global logging options for ADAL.
    * @param {LoggingOptions} options
